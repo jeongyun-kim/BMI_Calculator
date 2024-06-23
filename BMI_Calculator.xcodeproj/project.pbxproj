@@ -14,7 +14,7 @@
 		E0C756362C0974E00099B0E5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C756352C0974E00099B0E5 /* UIView + Extension.swift */; };
 		E0C7563C2C099BB20099B0E5 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7563B2C099BB20099B0E5 /* UIViewController + Extension.swift */; };
 		E0C7563E2C099EB90099B0E5 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7563D2C099EB90099B0E5 /* UIButton + Extension.swift */; };
-		E0C756402C09BFC70099B0E5 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7563F2C09BFC70099B0E5 /* UserDefaultManager.swift */; };
+		E0C756402C09BFC70099B0E5 /* UserDefaulstManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7563F2C09BFC70099B0E5 /* UserDefaulstManager.swift */; };
 		E0CB49A92BFC7E9E0021C478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB49A82BFC7E9E0021C478 /* AppDelegate.swift */; };
 		E0CB49AB2BFC7E9E0021C478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB49AA2BFC7E9E0021C478 /* SceneDelegate.swift */; };
 		E0CB49AD2BFC7E9E0021C478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB49AC2BFC7E9E0021C478 /* ViewController.swift */; };
@@ -31,7 +31,7 @@
 		E0C756352C0974E00099B0E5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		E0C7563B2C099BB20099B0E5 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		E0C7563D2C099EB90099B0E5 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
-		E0C7563F2C09BFC70099B0E5 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		E0C7563F2C09BFC70099B0E5 /* UserDefaulstManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaulstManager.swift; sourceTree = "<group>"; };
 		E0CB49A52BFC7E9E0021C478 /* BMI_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CB49A82BFC7E9E0021C478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CB49AA2BFC7E9E0021C478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				E0CB49B12BFC7E9F0021C478 /* Assets.xcassets */,
 				E0CB49B32BFC7E9F0021C478 /* LaunchScreen.storyboard */,
 				E0CB49B62BFC7E9F0021C478 /* Info.plist */,
-				E0C7563F2C09BFC70099B0E5 /* UserDefaultManager.swift */,
+				E0C7563F2C09BFC70099B0E5 /* UserDefaulstManager.swift */,
 			);
 			path = BMI_Calculator;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 				E0C7563C2C099BB20099B0E5 /* UIViewController + Extension.swift in Sources */,
 				E0CB49A92BFC7E9E0021C478 /* AppDelegate.swift in Sources */,
 				E0C756322C0974D00099B0E5 /* UILabel + Extension.swift in Sources */,
-				E0C756402C09BFC70099B0E5 /* UserDefaultManager.swift in Sources */,
+				E0C756402C09BFC70099B0E5 /* UserDefaulstManager.swift in Sources */,
 				E0B5E5542C2807B50024ADB8 /* ValidateData.swift in Sources */,
 				E0CB49AB2BFC7E9E0021C478 /* SceneDelegate.swift in Sources */,
 				E0C7563E2C099EB90099B0E5 /* UIButton + Extension.swift in Sources */,

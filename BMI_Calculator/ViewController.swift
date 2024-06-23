@@ -66,6 +66,7 @@ extension ViewController {
 
 // MARK: 액션
 extension ViewController {
+    // 저장된 데이터 불러오기 및 삭제
     @IBAction func getSavedataBtnTapped(_ sender: UIButton) {
         let alert = UIAlertController(title: AlertTitle.mainTitle.rawValue, message: nil, preferredStyle: .alert)
         alert.addTextField()
@@ -74,7 +75,8 @@ extension ViewController {
             guard let nickname = alert.textFields?.first?.text else {
                 return
             }
-            if let savedata = UserDefaults.standard.array(forKey: nickname) {
+            let savedata = UserDefaulstManager.shared.getData(nickname: nickname)
+            if !savedata.isEmpty {
                 self.nicknameTextField.text = nickname
                 self.heightTextField.text = "\(savedata[0])"
                 self.weightTextField.text = "\(savedata[1])"
@@ -85,8 +87,8 @@ extension ViewController {
         // 데이터 리셋
         let reset = UIAlertAction(title: "데이터 삭제", style: .destructive) { _ in
             guard let nickname = alert.textFields?.first?.text else { return }
-            if let savedata = UserDefaults.standard.array(forKey: nickname) {
-                UserDefaults.standard.removeObject(forKey: nickname)
+            if !UserDefaulstManager.shared.getData(nickname: nickname).isEmpty {
+                UserDefaulstManager.shared.deleteData(nickname: nickname)
                 self.showAlert(title: AlertTitle.deleteSuccess.rawValue)
             } else {
                 self.showAlert(title: AlertTitle.noDataToDelete.rawValue)
@@ -168,17 +170,18 @@ extension ViewController {
     func showAlert(title: String, alertType: AlertType = .justAlert, weight: Float? = nil, height: Float? = nil) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         let confirm = UIAlertAction(title: "확인", style: .cancel)
-        let save = UIAlertAction(title: "저장", style: .default) { _ in
-            guard let nickname = self.nicknameTextField.text else { return }
-            UserDefaults.standard.set([height, weight], forKey: nickname)
-            self.showAlert(title: AlertTitle.saveSuccess.rawValue)
-        }
         alert.addAction(confirm)
-        // 만약 BMI 계산을 거치지 않은 단순 알림창이라면
+      
+        // Alert가 단순 알림용인지, 결과 확인 후 저장하기용인지
         switch alertType {
         case .justAlert:
             present(alert, animated: true)
         case .resultAlert:
+            let save = UIAlertAction(title: "저장", style: .default) { _ in
+                guard let nickname = self.nicknameTextField.text else { return }
+                UserDefaulstManager.shared.saveData(nickname: nickname, height: height!, weight: weight!)
+                self.showAlert(title: AlertTitle.saveSuccess.rawValue)
+            }
             alert.addAction(save)
             present(alert,animated: true)
         }
