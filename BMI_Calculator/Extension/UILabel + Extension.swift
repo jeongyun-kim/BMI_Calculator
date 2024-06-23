@@ -8,8 +8,8 @@
 import UIKit
 
 extension UILabel {
-    func configureLabel(_ text: String, size: CGFloat = 16, weight: UIFont.Weight = .regular) {
-        self.text = text
+    func configureLabel(_ textType: LabelText, size: CGFloat = 16, weight: UIFont.Weight = .regular) {
+        self.text = textType.rawValue
         self.font = UIFont.systemFont(ofSize: 16, weight: weight)
     }
 }

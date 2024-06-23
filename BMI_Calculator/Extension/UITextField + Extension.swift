@@ -8,9 +8,9 @@
 import UIKit
 
 extension UITextField {
-    func configureTextField(placeHolder: String) {
+    func configureTextField(placeHolder: Placeholder) {
         self.borderStyle = .none
-        self.placeholder = placeHolder
+        self.placeholder = placeHolder.rawValue
     }
     
     func setPaddingInTextField() {

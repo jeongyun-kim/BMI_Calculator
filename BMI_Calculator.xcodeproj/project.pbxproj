@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0B5E5542C2807B50024ADB8 /* ValidateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B5E5532C2807B50024ADB8 /* ValidateData.swift */; };
+		E0B5E5562C2807C10024ADB8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B5E5552C2807C10024ADB8 /* Enums.swift */; };
 		E0C756322C0974D00099B0E5 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C756312C0974D00099B0E5 /* UILabel + Extension.swift */; };
 		E0C756342C0974DA0099B0E5 /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C756332C0974DA0099B0E5 /* UITextField + Extension.swift */; };
 		E0C756362C0974E00099B0E5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C756352C0974E00099B0E5 /* UIView + Extension.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0B5E5532C2807B50024ADB8 /* ValidateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateData.swift; sourceTree = "<group>"; };
+		E0B5E5552C2807C10024ADB8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		E0C756312C0974D00099B0E5 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		E0C756332C0974DA0099B0E5 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		E0C756352C0974E00099B0E5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0B5E5522C2807A40024ADB8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				E0B5E5532C2807B50024ADB8 /* ValidateData.swift */,
+				E0B5E5552C2807C10024ADB8 /* Enums.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		E0C756302C0974C20099B0E5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 		E0CB49A72BFC7E9E0021C478 /* BMI_Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				E0B5E5522C2807A40024ADB8 /* Enum */,
 				E0C756302C0974C20099B0E5 /* Extension */,
 				E0CB49A82BFC7E9E0021C478 /* AppDelegate.swift */,
 				E0CB49AA2BFC7E9E0021C478 /* SceneDelegate.swift */,
@@ -171,8 +185,10 @@
 				E0CB49A92BFC7E9E0021C478 /* AppDelegate.swift in Sources */,
 				E0C756322C0974D00099B0E5 /* UILabel + Extension.swift in Sources */,
 				E0C756402C09BFC70099B0E5 /* UserDefaultManager.swift in Sources */,
+				E0B5E5542C2807B50024ADB8 /* ValidateData.swift in Sources */,
 				E0CB49AB2BFC7E9E0021C478 /* SceneDelegate.swift in Sources */,
 				E0C7563E2C099EB90099B0E5 /* UIButton + Extension.swift in Sources */,
+				E0B5E5562C2807C10024ADB8 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
