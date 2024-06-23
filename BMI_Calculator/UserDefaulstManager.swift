@@ -8,11 +8,11 @@
 import UIKit
 
 class UserDefaulstManager {
+    private init() {}
     static let shared = UserDefaulstManager()
     
     let standard = UserDefaults.standard
-   
-    
+
     func getData(nickname: String) -> [Any] {
         return standard.array(forKey: nickname) ?? []
     }
