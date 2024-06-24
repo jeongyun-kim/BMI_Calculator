@@ -10,9 +10,15 @@ import Foundation
 enum AlertType {
     case justAlert
     case resultAlert
+    
+    static let confirm = "확인"
+    static let cancel = "취소"
+    static let save = "저장"
+    static let load = "불러오기"
+    static let delete = "데이터 삭제"
 }
 
-enum AlertTitle: String {
+enum SaveAndLoadAlertTexts: String {
     case mainTitle = "닉네임을 입력해주세요"
     case noData = "해당 닉네임으로 저장된 데이터가 없습니다!"
     case deleteSuccess = "삭제가 완료되었습니다!"
